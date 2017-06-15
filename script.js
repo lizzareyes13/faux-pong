@@ -8,13 +8,14 @@ window.onload = function () {
   canvasContext = canvas.getContext("2d");
 
   var framesPerSecond = 30;
-  setInterval(callBoth, 1000/framesPerSecond);
+  setInterval(function() {
+    moveEverything();
+    drawEverything();
+  }
+  , 1000/framesPerSecond);
 }
 
-function callBoth() {
-  moveEverything();
-  drawEverything();
-}
+
 
 function moveEverything () {
   ballX = ballX + 5;
