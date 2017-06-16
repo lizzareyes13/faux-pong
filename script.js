@@ -23,6 +23,9 @@ function moveEverything () {
   if(ballX > 800){
       ballSpeedX = -5;
   }
+  if(ballX < 0){
+    ballSpeedX = 5;
+  }
 }
 
 function drawEverything () {
