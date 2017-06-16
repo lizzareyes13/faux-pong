@@ -20,6 +20,7 @@ window.onload = function () {
 
 function moveEverything () {
   ballX = ballX + ballSpeedX;
+  ballSpeedX = ballSpeedX + 1; 
 }
 
 function drawEverything () {
