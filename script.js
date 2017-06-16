@@ -20,6 +20,9 @@ window.onload = function () {
 
 function moveEverything () {
   ballX = ballX + ballSpeedX;
+  if(ballX < 0){
+      ballSpeedX = -ballSpeedX;
+  }
   if(ballX > canvas.width){
       ballSpeedX = -ballSpeedX;
   }
