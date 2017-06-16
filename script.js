@@ -1,7 +1,7 @@
 var canvas;
 var canvasContext;
 var ballX = 50;
-var ballSpeedX = 5;
+var ballSpeedX = 15;
 
 window.onload = function () {
   console.log("Hello World!");
@@ -21,10 +21,7 @@ window.onload = function () {
 function moveEverything () {
   ballX = ballX + ballSpeedX;
   if(ballX > 800){
-      ballSpeedX = -5;
-  }
-  if(ballX < 0){
-    ballSpeedX = 5;
+      ballSpeedX = -ballSpeedX;
   }
 }
 
