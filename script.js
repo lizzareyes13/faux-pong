@@ -29,8 +29,11 @@ function moveEverything () {
 }
 
 function drawEverything () {
+  // the line below fills the screen with black
   colorRect(0,0,canvas.width,canvas.height,'black');
+ //next line creates the player paddle
   colorRect(0,210,10,100,'white');
+  //the line below creates the ball
   colorRect(ballX,200,10,10,'red');
 }
 
