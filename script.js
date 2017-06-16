@@ -29,11 +29,13 @@ function moveEverything () {
 }
 
 function drawEverything () {
+  colorRect(0,0,canvas.width,canvas.height,'black');
+  colorRect(0,210,10,100,'white');
+  colorRect(ballX,200,10,10,'red');
+}
 
-  canvasContext.fillStyle = "black";
-  canvasContext.fillRect(0,0,canvas.width,canvas.height);
-  canvasContext.fillStyle = "white";
-  canvasContext.fillRect(0,210,10,100);
-  canvasContext.fillStyle = "red";
-  canvasContext.fillRect(ballX,200,10,10);
+function colorRect(leftX,topY, width, height, drawColor){
+  canvasContext.fillStyle = drawColor;
+  canvasContext.fillRect(leftX,topY, width, height, drawColor);
+
 }
