@@ -32,7 +32,7 @@ function moveEverything () {
   if(ballY < 0){
       ballSpeedY = -ballSpeedY;
   }
-  if(ballY > canvas.width){
+  if(ballY > canvas.height){
       ballSpeedY = -ballSpeedY;
   }
 }
