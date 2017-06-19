@@ -61,7 +61,7 @@ function drawEverything () {
   // the line below fills the screen with black
   colorRect(0,0,canvas.width,canvas.height,'black');
  //next line creates the player paddle
-  colorRect(0,210,10,100,'white');
+  colorRect(0,paddle1Y,10,100,'white');
   //the line below draws the ball
   colorCirlce(ballX, ballY, 10, 'white');
 }
