@@ -30,6 +30,12 @@ window.onload = function () {
     drawEverything();
   }
   , 1000/framesPerSecond);
+
+  canvas.addEventListener('mousemove',
+          function(evt) {
+            var mousePos = calculateMousePos(evt);
+            paddle1Y = mousePos.y;
+          });
 }
 
 
