@@ -33,8 +33,11 @@ function drawEverything () {
   colorRect(0,0,canvas.width,canvas.height,'black');
  //next line creates the player paddle
   colorRect(0,210,10,100,'white');
-  //the line below creates the ball
-  colorRect(ballX,200,10,10,'red');
+  //the line below draws the ball
+  canvasContext.fillStyle = 'red';
+  canvasContext.beginPath();
+  canvasContext.arc(ballX, 100, 10, 0, Math.PI*2, true);
+  canvasContext.fill();
 }
 
 function colorRect(leftX,topY, width, height, drawColor){
