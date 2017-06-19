@@ -1,7 +1,9 @@
 var canvas;
 var canvasContext;
 var ballX = 50;
-var ballSpeedX = 15;
+var ballY = 50;
+var ballSpeedX = 10;
+var ballSpeedY = 4;
 
 window.onload = function () {
   console.log("Hello World!");
@@ -20,11 +22,18 @@ window.onload = function () {
 
 function moveEverything () {
   ballX = ballX + ballSpeedX;
+  ballX = ballX + ballSpeedY;
   if(ballX < 0){
       ballSpeedX = -ballSpeedX;
   }
   if(ballX > canvas.width){
       ballSpeedX = -ballSpeedX;
+  }
+  if(ballY < 0){
+      ballSpeedY = -ballSpeedY;
+  }
+  if(ballY > canvas.width){
+      ballSpeedY = -ballSpeedY;
   }
 }
 
