@@ -5,6 +5,9 @@ var ballY = 50;
 var ballSpeedX = 10;
 var ballSpeedY = 4;
 
+var paddle1Y = 250;
+const PADDLE_HEIGHT = 100;
+
 window.onload = function () {
   console.log("Hello World!");
   canvas = document.getElementById("pongCanvas");
