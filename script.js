@@ -43,7 +43,7 @@ function drawEverything () {
  //next line creates the player paddle
   colorRect(0,210,10,100,'white');
   //the line below draws the ball
-  colorCirlce(ballX, 150, 10, 'white');
+  colorCirlce(ballX, ballY, 10, 'white');
 }
 
 function colorCirlce(centerX,centerY,radius,drawColor){
