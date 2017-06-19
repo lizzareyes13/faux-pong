@@ -8,6 +8,17 @@ var ballSpeedY = 4;
 var paddle1Y = 250;
 const PADDLE_HEIGHT = 100;
 
+function calculateMousePos(evt) {
+  var rect = canvas.getBoundingClientRect();
+  var root = document.documentElement;
+  var mouseX = evt.clientX - rect.left - root.scrollLeft;
+  var mouseY = evt.clientY - rect.top - root.scrollTop;
+  return {
+    x:mouseX,
+    y:mouseY
+  };
+}
+
 window.onload = function () {
   console.log("Hello World!");
   canvas = document.getElementById("pongCanvas");
