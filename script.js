@@ -22,7 +22,7 @@ window.onload = function () {
 
 function moveEverything () {
   ballX = ballX + ballSpeedX;
-  ballX = ballX + ballSpeedY;
+  ballY = ballY + ballSpeedY;
   if(ballX < 0){
       ballSpeedX = -ballSpeedX;
   }
