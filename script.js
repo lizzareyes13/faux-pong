@@ -51,7 +51,8 @@ function moveEverything () {
   ballX = ballX + ballSpeedX;
   ballY = ballY + ballSpeedY;
   if(ballX < 0){
-      ballSpeedX = -ballSpeedX;
+      // ballSpeedX = -ballSpeedX;
+      ballReset();
   }
   if(ballX > canvas.width){
       ballSpeedX = -ballSpeedX;
