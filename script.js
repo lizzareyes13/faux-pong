@@ -52,7 +52,7 @@ function moveEverything () {
   ballX = ballX + ballSpeedX;
   ballY = ballY + ballSpeedY;
   if(ballX < 0){
-    if(balY > paddle1Y &&
+    if(ballY > paddle1Y &&
        ballY < paddle1Y + PADDLE_HEIGHT) {
             ballSpeedX = -ballSpeedX;
           } else {
