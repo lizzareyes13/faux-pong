@@ -38,6 +38,13 @@ window.onload = function () {
           });
 }
 
+function ballReset() {
+  ballX = canvas.width/2;
+  ballY = canvas.height/2;
+}
+
+
+
 
 
 function moveEverything () {
