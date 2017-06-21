@@ -38,7 +38,7 @@ window.onload = function () {
           });
 }
 
-function balleset() {
+function ballReset() {
   ballSpeedX = -ballSpeedX;
   ballX = canvas.width/2;
   ballY = canvas.height/2;
