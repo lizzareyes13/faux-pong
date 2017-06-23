@@ -36,7 +36,7 @@ window.onload = function () {
   canvas.addEventListener('mousemove',
           function(evt) {
             var mousePos = calculateMousePos(evt);
-            paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);
+            paddle2Y = mousePos.y - (PADDLE_HEIGHT/2);
           });
 }
 
