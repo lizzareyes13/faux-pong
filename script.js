@@ -60,7 +60,7 @@ function moveEverything () {
   computerMovement();
 
   ballX += ballSpeedX;
-  ballY = ballY + ballSpeedY;
+  ballY += ballSpeedY;
 
   if(ballX < 0){
     if(ballY > paddle1Y &&
