@@ -84,7 +84,7 @@ function drawEverything () {
   colorRect(canvas.width - PADDLE_THICKNESS,paddle2Y,
   PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
   //the line below draws the ball
-  colorCirlce(ballX, ballY, 10, 'white');
+  colorCirlce(ballX, ballY, PADDLE_THICKNESS, 'white');
 }
 
 function colorCirlce(centerX,centerY,radius,drawColor){
