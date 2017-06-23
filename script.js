@@ -6,6 +6,8 @@ var ballSpeedX = 10;
 var ballSpeedY = 4;
 
 var paddle1Y = 250;
+var paddle2Y = 250;
+const PADDLE_THICKNESS = 10;
 const PADDLE_HEIGHT = 100;
 
 function calculateMousePos(evt) {
@@ -51,6 +53,7 @@ function ballReset() {
 function moveEverything () {
   ballX = ballX + ballSpeedX;
   ballY = ballY + ballSpeedY;
+
   if(ballX < 0){
     if(ballY > paddle1Y &&
        ballY < paddle1Y + PADDLE_HEIGHT) {
@@ -59,6 +62,8 @@ function moveEverything () {
             ballReset();
           }
   }
+
+
   if(ballX > canvas.width){
       ballSpeedX = -ballSpeedX;
   }
@@ -74,7 +79,9 @@ function drawEverything () {
   // the line below fills the screen with black
   colorRect(0,0,canvas.width,canvas.height,'black');
  //next line creates the player paddle
-  colorRect(0,paddle1Y,10,100,'white');
+  colorRect(0,paddle1Y,PADDLE_THICKNESS,100,'white');
+ //next line creates the second paddle
+  colorRect(canvas.width - PADDLE_THICKNESS,paddle2Y,10,100,'white');
   //the line below draws the ball
   colorCirlce(ballX, ballY, 10, 'white');
 }
