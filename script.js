@@ -59,7 +59,7 @@ function computerMovement() {
 function moveEverything () {
   computerMovement();
 
-  ballX = ballX + ballSpeedX;
+  ballX += ballSpeedX;
   ballY = ballY + ballSpeedY;
 
   if(ballX < 0){
