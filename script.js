@@ -48,9 +48,17 @@ function ballReset() {
 
 
 
-
+function computerMovement() {
+  if(paddle2Y < ballY) {
+    paddle2Y = paddle2Y + 6;
+  } else {
+    paddle2Y = paddle2Y - 6;
+  }
+}
 
 function moveEverything () {
+  computerMovement();
+
   ballX = ballX + ballSpeedX;
   ballY = ballY + ballSpeedY;
 
