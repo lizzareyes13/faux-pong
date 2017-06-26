@@ -27,6 +27,14 @@ function calculateMousePos(evt) {
   };
 }
 
+function handleMouseClick(evt){
+  if(showingWinScreen){
+    player1Score = 0;
+    player2Score = 0;
+    showingWinScreen = false;
+  }
+}
+
 window.onload = function () {
   console.log("Hello World!");
   canvas = document.getElementById("pongCanvas");
@@ -37,6 +45,8 @@ window.onload = function () {
     moveEverything();
     drawEverything();
   }, 1000/framesPerSecond);
+
+  canvas.addEventListener('mousedown', handleMouseClick);
 
   canvas.addEventListener('mousemove',
           function(evt) {
