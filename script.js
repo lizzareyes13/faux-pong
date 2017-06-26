@@ -76,8 +76,8 @@ function moveEverything () {
                     -(paddle1Y+PADDLE_HEIGHT/2);
             ballSpeedY = deltaY * 0.35;
           } else {
-            ballReset();
             player2Score++;
+            ballReset();
           }
   }
   if(ballX > canvas.width){
@@ -88,8 +88,8 @@ function moveEverything () {
                     -(paddle2Y+PADDLE_HEIGHT/2);
             ballSpeedY = deltaY * 0.35;
           } else {
-            ballReset();
             player1Score++;
+            ballReset();
           }
   }
 
