@@ -71,6 +71,11 @@ function computerMovement() {
 }
 
 function moveEverything () {
+
+  if(showingWinScreen){
+        return;
+  }
+
   computerMovement();
 
   ballX += ballSpeedX;
