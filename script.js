@@ -102,6 +102,7 @@ function drawEverything () {
   PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
   //the line below draws the ball
   colorCirlce(ballX, ballY, 10, 'white');
+  canvasContext.fillText("score stuff", 100, 100);
 }
 
 function colorCirlce(centerX,centerY,radius,drawColor){
