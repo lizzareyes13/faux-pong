@@ -72,6 +72,7 @@ function moveEverything () {
             ballSpeedX = -ballSpeedX;
           } else {
             ballReset();
+            player2Score++;
           }
   }
   if(ballX > canvas.width){
@@ -80,6 +81,7 @@ function moveEverything () {
             ballSpeedX = -ballSpeedX;
           } else {
             ballReset();
+            player1Score++;
           }
   }
 
