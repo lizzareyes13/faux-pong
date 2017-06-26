@@ -127,6 +127,13 @@ function moveEverything () {
   }
 }
 
+function drawNet(){
+    for(var i=0; i<canvas.height; i+40){
+      colorRect(canvas.width/2-1,i,2,20,'black');
+
+    }
+  }
+
 function drawEverything () {
   // the line below fills the screen with black
   colorRect(0,0,canvas.width,canvas.height,'black');
