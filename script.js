@@ -9,6 +9,8 @@ var player1Score = 0;
 var player2Score = 0;
 const WINNING_SCORE = 3;
 
+var showingWinScreen = false;
+
 var paddle1Y = 250;
 var paddle2Y = 250;
 const PADDLE_THICKNESS = 10;
