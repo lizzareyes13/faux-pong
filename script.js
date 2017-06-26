@@ -124,6 +124,7 @@ function drawEverything () {
   colorRect(0,0,canvas.width,canvas.height,'black');
 
   if(showingWinScreen){
+    canvasContext.fillStyle = 'white';
     canvasContext.fillText("click to continue", 100, 100);
         return;
   }
