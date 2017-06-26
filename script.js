@@ -49,6 +49,7 @@ function ballReset() {
   if(player1Score >= WINNING_SCORE || player2Score >= WINNING_SCORE){
     player1Score = 0;
     player2Score = 0;
+    showingWinScreen = true;
   }
 
 
