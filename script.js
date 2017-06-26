@@ -128,9 +128,8 @@ function moveEverything () {
 }
 
 function drawNet(){
-    for(var i=0; i<canvas.height; i+40){
+    for(var i=0; i<canvas.height; i+40) {
       colorRect(canvas.width/2-1,i,2,20,'white');
-
     }
   }
 
@@ -154,6 +153,7 @@ function drawEverything () {
   }
 
 
+  drawNet();
  //next line creates the left player paddle
   colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
  //next line creates the right player paddle
