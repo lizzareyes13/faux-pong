@@ -68,7 +68,7 @@ function computerMovement() {
 }
 
 function moveEverything () {
-  //computerMovement();
+  computerMovement();
 
   ballX += ballSpeedX;
   ballY += ballSpeedY;
