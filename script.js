@@ -30,8 +30,7 @@ window.onload = function () {
   setInterval(function() {
     moveEverything();
     drawEverything();
-  }
-  , 1000/framesPerSecond);
+  }, 1000/framesPerSecond);
 
   canvas.addEventListener('mousemove',
           function(evt) {
@@ -51,9 +50,9 @@ function ballReset() {
 function computerMovement() {
   var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
 
-  if(paddle2YCenter < ballY) {
+  if(paddle2YCenter < ballY-35) {
     paddle2Y += 6;
-  } else {
+  } else if(paddle2YCenter > ballY+35) {
     paddle2Y -= 6;
   }
 }
@@ -66,7 +65,7 @@ function moveEverything () {
 
   if(ballX < 0){
     if(ballY > paddle1Y &&
-       ballY < paddle1Y + PADDLE_HEIGHT) {
+       ballY < paddle1Y+PADDLE_HEIGHT){
             ballSpeedX = -ballSpeedX;
           } else {
             ballReset();
@@ -74,7 +73,7 @@ function moveEverything () {
   }
   if(ballX > canvas.width){
     if(ballY > paddle2Y &&
-       ballY < paddle2Y + PADDLE_HEIGHT) {
+       ballY < paddle2Y+PADDLE_HEIGHT){
             ballSpeedX = -ballSpeedX;
           } else {
             ballReset();
@@ -99,10 +98,10 @@ function drawEverything () {
  //next line creates the left player paddle
   colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
  //next line creates the right player paddle
-  colorRect(canvas.width - PADDLE_THICKNESS,paddle2Y,
+  colorRect(canvas.width-PADDLE_THICKNESS,paddle2Y,
   PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
   //the line below draws the ball
-  colorCirlce(ballX, ballY, PADDLE_THICKNESS, 'white');
+  colorCirlce(ballX, ballY, 10, 'white');
 }
 
 function colorCirlce(centerX,centerY,radius,drawColor){
