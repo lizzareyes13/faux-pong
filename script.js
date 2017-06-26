@@ -122,6 +122,13 @@ function moveEverything () {
 function drawEverything () {
   // the line below fills the screen with black
   colorRect(0,0,canvas.width,canvas.height,'black');
+
+  if(showingWinScreen){
+    canvasContext.fillText("click to continue", 100, 100);
+        return;
+  }
+
+
  //next line creates the left player paddle
   colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
  //next line creates the right player paddle
