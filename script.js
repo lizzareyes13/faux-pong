@@ -76,7 +76,7 @@ function moveEverything () {
                     -(paddle1Y+PADDLE_HEIGHT/2);
             ballSpeedY = deltaY * 0.35;
           } else {
-            player2Score++;
+            player2Score++; //this block of code should always be before ballReset()
             ballReset();
           }
   }
